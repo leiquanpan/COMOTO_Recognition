@@ -24,6 +24,12 @@ Labelme, https://github.com/wkentaro/labelme
 4. Replace all above three training resources with your labeled traning sets
 4. Run script prepare_trainsets.sh
 
+# Training sets registration
+1. Need to replace files in model (a tricky way to manage git submodules)
+2. Under replacement/
+3. Replace train_utils.py in models/research/deeplab/utils/
+4. Replace segmentation_dataset.py in models/research/deeplab/deprecated/ 
+
 # Training steps
 1. Download initial model xception65_cityscapes_trainfine from https://github.com/tensorflow/models/blob/master/research/deeplab/g3doc/model_zoo.md
 2. Put the initial model under test_sets/
