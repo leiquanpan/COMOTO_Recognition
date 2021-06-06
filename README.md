@@ -8,6 +8,9 @@ SSH, https://www.ssh.com/academy/ssh/command
 1. Find cert (under Dropbox\COMOTO\AI\***.pem)
 2. Get IP address (Dynamic, check with Leiquan from wechat group)
 
+# Local setup pre-requisite
+1. Tensorflow 1.14 (suggested, otherwise lots of file changes needed)
+
 # DeepLabV3+ model files
 Under models/research/deeplab/
 
