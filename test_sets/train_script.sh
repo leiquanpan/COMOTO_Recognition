@@ -1,5 +1,5 @@
 CURRENT_DIR=$(pwd)
-DATASER_DIR="${CURRENT_DIR}/segtest"
+DATASET_DIR="${CURRENT_DIR}/segtest"
 
 # Set up the working directories.
 SEG_FOLDER="mysegtest"
@@ -17,10 +17,10 @@ mkdir -p "${EXPORT_DIR}"
  
  
 SEG_DATASET="${DATASET_DIR}/tfrecord"
- 
+
 # Train 10 iterations.
-NUM_ITERATIONS=500
-python /home/comotoUser/models/research/deeplab/train.py \
+NUM_ITERATIONS=10
+python "${CURRENT_DIR}/../models/research/deeplab/train.py" \
 	  --logtostderr \
 	    --train_split="train" \
 	      --model_variant="xception_65" \

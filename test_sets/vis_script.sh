@@ -11,7 +11,7 @@ VIS_LOGDIR="${DATASET_DIR}/${SEG_FOLDER}/${EXP_FOLDER}/vis"
 EXPORT_DIR="${DATASET_DIR}/${SEG_FOLDER}/${EXP_FOLDER}/export"
 
 
-python /home/comotoUser/models/research/deeplab/vis.py \
+python "${CURRENT_DIR}/../models/research/deeplab/vis.py" \
         --logtostderr \
         --vis_split="val" \
         --model_variant="xception_65" \
