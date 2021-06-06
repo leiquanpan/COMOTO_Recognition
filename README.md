@@ -30,6 +30,10 @@ Labelme, https://github.com/wkentaro/labelme
 3. Replace train_utils.py in models/research/deeplab/utils/
 4. Replace segmentation_dataset.py in models/research/deeplab/deprecated/ 
 
+# Environment config
+1. Navigate in models to models/research
+2. Run command: export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
+
 # Training steps
 1. Download initial model xception65_cityscapes_trainfine from https://github.com/tensorflow/models/blob/master/research/deeplab/g3doc/model_zoo.md
 2. Put the initial model under test_sets/
